@@ -14,7 +14,7 @@ namespace Company.Function
         }
 
         [Function("EventHubTrigger1")]
-        [CosmosDBOutput(databaseName: "%OutputDatabase%", containerName: "%OutputContainerName%", Connection = "CosmosDBConnectionString", PartitionKey = "/deviceId", CreateIfNotExists = true)]
+        [CosmosDBOutput(databaseName: "%OutputDatabase%", containerName: "%OutputContainerName%", Connection = "CosmosDBConnectionString", PartitionKey = "/deviceid", CreateIfNotExists = true)]
         public object Run([EventHubTrigger("samples-workitems", Connection = "EventHubConnectionAppSetting")] IReadOnlyList<MyDocument> input)
         {
             _logger.LogInformation($"First Event Hubs triggered message: {input[0]}");
