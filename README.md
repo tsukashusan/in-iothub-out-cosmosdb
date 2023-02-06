@@ -1,0 +1,1 @@
+# in-iothub-out-cosmosdb
