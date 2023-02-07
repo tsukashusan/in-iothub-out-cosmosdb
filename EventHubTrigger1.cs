@@ -34,16 +34,12 @@ namespace Company.Function
     {
         [JsonProperty("id")]
         public string Id { get; set; }
-
         [JsonProperty("messageId")]
         public ulong messageId { get; set; }
-
-        [JsonProperty("deviceId")]
+        [JsonProperty("deviceid")]
         public string deviceId { get; set; }
-
         [JsonProperty("temperature")]
         public double temperature { get; set; }
-
         [JsonProperty("humidity")]
         public double humidity { get; set; }
         [JsonProperty("send_datetime")]
